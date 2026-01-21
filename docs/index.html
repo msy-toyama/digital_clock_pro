@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock Pro - Premium Digital Clock App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --background: #ffffff;
+            --card-background: #f5f5f7;
+            --border-color: #d2d2d7;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #0A84FF;
+                --text-primary: #f5f5f7;
+                --text-secondary: #a1a1a6;
+                --background: #000000;
+                --card-background: #1c1c1e;
+                --border-color: #38383a;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 26px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .app-icon span {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        
+        .tagline {
+            font-size: 20px;
+            color: var(--text-secondary);
+        }
+        
+        .links-grid {
+            display: grid;
+            gap: 16px;
+            margin-top: 40px;
+        }
+        
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 20px 24px;
+            background: var(--card-background);
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        .link-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            font-size: 24px;
+        }
+        
+        .link-icon.terms { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .link-icon.privacy { background: linear-gradient(135deg, #11998e, #38ef7d); }
+        .link-icon.support { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        
+        .link-content h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .link-content p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .arrow {
+            margin-left: auto;
+            color: var(--text-secondary);
+            font-size: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        footer p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .app-store-badge {
+            margin-top: 24px;
+        }
+        
+        .app-store-badge img {
+            height: 44px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">
+                <span>12:00</span>
+            </div>
+            <h1>Digital Clock Pro</h1>
+            <p class="tagline">Transform your device into an elegant timepiece</p>
+        </header>
+        
+        <nav class="links-grid">
+            <a href="terms.html" class="link-card">
+                <div class="link-icon terms">📜</div>
+                <div class="link-content">
+                    <h2>Terms of Service</h2>
+                    <p>Read our terms and conditions</p>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="privacy.html" class="link-card">
+                <div class="link-icon privacy">🔒</div>
+                <div class="link-content">
+                    <h2>Privacy Policy</h2>
+                    <p>Learn how we protect your privacy</p>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            
+            <a href="support.html" class="link-card">
+                <div class="link-icon support">💬</div>
+                <div class="link-content">
+                    <h2>Support & Contact</h2>
+                    <p>Get help or send us feedback</p>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </nav>
+        
+        <footer>
+            <p>© 2026 Digital Clock Pro. All rights reserved.</p>
+            <!-- Uncomment when available on App Store
+            <div class="app-store-badge">
+                <a href="https://apps.apple.com/app/digital-clock-pro">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+            </div>
+            -->
+        </footer>
+    </div>
+</body>
+</html>

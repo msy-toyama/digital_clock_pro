@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C5AF8FC32F1CB1FD0086A678 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AF8FC22F1CB1FC0086A678 /* WidgetKit.framework */; };
+		C5AF8FC52F1CB1FD0086A678 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AF8FC42F1CB1FD0086A678 /* SwiftUI.framework */; };
+		C5AF8FD62F1CB1FE0086A678 /* ClockWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C5AF8FC02F1CB1FC0086A678 /* ClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C5AF8FDD2F1CC1FD0086A678 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AF8FDC2F1CC1FD0086A678 /* icon.png */; };
+		C5AF8FDE2F1CC1FD0086A678 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AF8FDC2F1CC1FD0086A678 /* icon.png */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C5AF8F102F1906280086A678 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +29,48 @@
 			remoteGlobalIDString = C5AF8EFC2F1906250086A678;
 			remoteInfo = digital_clock;
 		};
+		C5AF8FD42F1CB1FE0086A678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5AF8EF52F1906250086A678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5AF8FBF2F1CB1FC0086A678;
+			remoteInfo = ClockWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5AF8FDB2F1CB1FE0086A678 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C5AF8FD62F1CB1FE0086A678 /* ClockWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C5AF8EFD2F1906250086A678 /* digital_clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digital_clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AF8F0F2F1906280086A678 /* digital_clockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = digital_clockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AF8F192F1906280086A678 /* digital_clockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = digital_clockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AF8FC02F1CB1FC0086A678 /* ClockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AF8FC22F1CB1FC0086A678 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C5AF8FC42F1CB1FD0086A678 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C5AF8FDC2F1CC1FD0086A678 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C5AF8FD72F1CB1FE0086A678 /* Exceptions for "ClockWidget" folder in "ClockWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C5AF8FBF2F1CB1FC0086A678 /* ClockWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C5AF8EFF2F1906250086A678 /* digital_clock */ = {
@@ -43,6 +86,14 @@
 		C5AF8F1C2F1906280086A678 /* digital_clockUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = digital_clockUITests;
+			sourceTree = "<group>";
+		};
+		C5AF8FC62F1CB1FD0086A678 /* ClockWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C5AF8FD72F1CB1FE0086A678 /* Exceptions for "ClockWidget" folder in "ClockWidgetExtension" target */,
+			);
+			path = ClockWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +120,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5AF8FBD2F1CB1FC0086A678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AF8FC52F1CB1FD0086A678 /* SwiftUI.framework in Frameworks */,
+				C5AF8FC32F1CB1FD0086A678 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +138,8 @@
 				C5AF8EFF2F1906250086A678 /* digital_clock */,
 				C5AF8F122F1906280086A678 /* digital_clockTests */,
 				C5AF8F1C2F1906280086A678 /* digital_clockUITests */,
+				C5AF8FC62F1CB1FD0086A678 /* ClockWidget */,
+				C5AF8FC12F1CB1FC0086A678 /* Frameworks */,
 				C5AF8EFE2F1906250086A678 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +150,19 @@
 				C5AF8EFD2F1906250086A678 /* digital_clock.app */,
 				C5AF8F0F2F1906280086A678 /* digital_clockTests.xctest */,
 				C5AF8F192F1906280086A678 /* digital_clockUITests.xctest */,
+				C5AF8FC02F1CB1FC0086A678 /* ClockWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C5AF8FC12F1CB1FC0086A678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF8FDC2F1CC1FD0086A678 /* icon.png */,
+				C5AF8FC22F1CB1FC0086A678 /* WidgetKit.framework */,
+				C5AF8FC42F1CB1FD0086A678 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +175,12 @@
 				C5AF8EF92F1906250086A678 /* Sources */,
 				C5AF8EFA2F1906250086A678 /* Frameworks */,
 				C5AF8EFB2F1906250086A678 /* Resources */,
+				C5AF8FDB2F1CB1FE0086A678 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C5AF8FD52F1CB1FE0086A678 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C5AF8EFF2F1906250086A678 /* digital_clock */,
@@ -163,6 +238,28 @@
 			productReference = C5AF8F192F1906280086A678 /* digital_clockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C5AF8FBF2F1CB1FC0086A678 /* ClockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AF8FD82F1CB1FE0086A678 /* Build configuration list for PBXNativeTarget "ClockWidgetExtension" */;
+			buildPhases = (
+				C5AF8FBC2F1CB1FC0086A678 /* Sources */,
+				C5AF8FBD2F1CB1FC0086A678 /* Frameworks */,
+				C5AF8FBE2F1CB1FC0086A678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C5AF8FC62F1CB1FD0086A678 /* ClockWidget */,
+			);
+			name = ClockWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = ClockWidgetExtension;
+			productReference = C5AF8FC02F1CB1FC0086A678 /* ClockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +281,9 @@
 						CreatedOnToolsVersion = 26.1.1;
 						TestTargetID = C5AF8EFC2F1906250086A678;
 					};
+					C5AF8FBF2F1CB1FC0086A678 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 				};
 			};
 			buildConfigurationList = C5AF8EF82F1906250086A678 /* Build configuration list for PBXProject "digital_clock" */;
@@ -192,6 +292,37 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+				ko,
+				es,
+				fr,
+				de,
+				it,
+				pt,
+				ru,
+				ar,
+				hi,
+				th,
+				vi,
+				id,
+				ms,
+				nl,
+				pl,
+				tr,
+				sv,
+				nb,
+				da,
+				fi,
+				el,
+				cs,
+				hu,
+				ro,
+				uk,
+				he,
+				bn,
+				fil,
 			);
 			mainGroup = C5AF8EF42F1906250086A678;
 			minimizedProjectReferenceProxies = 1;
@@ -203,6 +334,7 @@
 				C5AF8EFC2F1906250086A678 /* digital_clock */,
 				C5AF8F0E2F1906280086A678 /* digital_clockTests */,
 				C5AF8F182F1906280086A678 /* digital_clockUITests */,
+				C5AF8FBF2F1CB1FC0086A678 /* ClockWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AF8FDD2F1CC1FD0086A678 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +359,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AF8FBE2F1CB1FC0086A678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AF8FDE2F1CC1FD0086A678 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +394,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5AF8FBC2F1CB1FC0086A678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +413,11 @@
 			isa = PBXTargetDependency;
 			target = C5AF8EFC2F1906250086A678 /* digital_clock */;
 			targetProxy = C5AF8F1A2F1906280086A678 /* PBXContainerItemProxy */;
+		};
+		C5AF8FD52F1CB1FE0086A678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5AF8FBF2F1CB1FC0086A678 /* ClockWidgetExtension */;
+			targetProxy = C5AF8FD42F1CB1FE0086A678 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -538,6 +691,66 @@
 			};
 			name = Release;
 		};
+		C5AF8FD92F1CB1FE0086A678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P58LD39J7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yostfandy.digital-clock.ClockWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5AF8FDA2F1CB1FE0086A678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P58LD39J7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yostfandy.digital-clock.ClockWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,6 +786,15 @@
 			buildConfigurations = (
 				C5AF8F2A2F1906280086A678 /* Debug */,
 				C5AF8F2B2F1906280086A678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5AF8FD82F1CB1FE0086A678 /* Build configuration list for PBXNativeTarget "ClockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AF8FD92F1CB1FE0086A678 /* Debug */,
+				C5AF8FDA2F1CB1FE0086A678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

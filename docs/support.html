@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Digital Clock Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --background: #ffffff;
+            --card-background: #f5f5f7;
+            --border-color: #d2d2d7;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #0A84FF;
+                --text-primary: #f5f5f7;
+                --text-secondary: #a1a1a6;
+                --background: #000000;
+                --card-background: #1c1c1e;
+                --border-color: #38383a;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        
+        .contact-card {
+            background: var(--card-background);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 24px 0;
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .contact-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .contact-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        .email-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary-color);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 122, 255, 0.3);
+        }
+        
+        .faq-section {
+            margin-top: 48px;
+        }
+        
+        .faq-item {
+            background: var(--card-background);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+        }
+        
+        .faq-item h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        
+        .faq-item h4::before {
+            content: "Q";
+            background: var(--primary-color);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        
+        .faq-item p {
+            color: var(--text-secondary);
+            margin-left: 36px;
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+        
+        .response-time {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+        
+        footer p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        a {
+            color: var(--primary-color);
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .tip-box h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .tip-box p {
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <h1>Support & Contact</h1>
+        <p class="subtitle">We're here to help you get the most out of Digital Clock Pro</p>
+        
+        <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <h3>Get in Touch</h3>
+            <p>Have questions, feedback, or need help? We'd love to hear from you!</p>
+            <a href="mailto:digital.clock.pro.app@gmail.com?subject=Digital%20Clock%20Pro%20Support" class="email-button">
+                ✉️ Email Us
+            </a>
+            <div class="response-time">
+                <span>⏱️</span>
+                <span>We typically respond within 24-48 hours</span>
+            </div>
+        </div>
+        
+        <div class="tip-box">
+            <h4>💡 When contacting support, please include:</h4>
+            <p>Your device model (e.g., iPhone 15), iOS version, and a description of the issue. Screenshots are always helpful!</p>
+        </div>
+        
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h4>How do I restore my Premium purchase?</h4>
+                <p>Go to Settings (gear icon) → scroll down and tap "Restore Purchase". Your purchase is linked to your Apple ID and can be restored on any device.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>How do I make the clock full screen?</h4>
+                <p>Simply tap anywhere on the clock display. Tap again to exit full-screen mode. In full-screen mode, all UI elements are hidden for a clean, distraction-free display.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>How do I switch between clock designs?</h4>
+                <p>Long-press on the clock display to open the design gallery. You can browse through all available themes and tap to select one.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>How do I create my own custom watch design?</h4>
+                <p>Tap the "Create" tab at the bottom of the screen. You can customize fonts, colors, backgrounds, and more. When you're happy with your design, tap "Save" to add it to your collection.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Why can I only save one custom design (Free version)?</h4>
+                <p>The free version includes 1 custom watch slot to let you experience the feature. Upgrade to Premium for unlimited custom watch saves and access to all 100+ design themes.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Is Premium a subscription?</h4>
+                <p>No! Premium is a one-time purchase. Pay once and enjoy all Premium features forever—no recurring charges.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>How do I change the language?</h4>
+                <p>Go to Settings → tap on your current language → select your preferred language from the list. The app supports 27 languages.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Does the clock work when the screen is locked?</h4>
+                <p>The app displays time while it's open. For always-on display, enable your device's Always-On Display feature if available (iPhone 14 Pro and later).</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>How accurate is the time?</h4>
+                <p>Digital Clock Pro uses your device's system time, which is automatically synchronized with Apple's time servers. The time should be accurate to within a second.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Can I use the timer in the background?</h4>
+                <p>Yes! Start a timer and you'll receive a notification when it completes, even if you switch to another app or lock your device.</p>
+            </div>
+        </section>
+        
+        <h2>App Information</h2>
+        <p><strong>Developer:</strong> Digital Clock Pro Team</p>
+        <p><strong>Contact Email:</strong> <a href="mailto:digital.clock.pro.app@gmail.com">digital.clock.pro.app@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/msy-toyama/digital_clock_pro" target="_blank" rel="noopener">github.com/msy-toyama/digital_clock_pro</a></p>
+        
+        <footer>
+            <p>© 2026 Digital Clock Pro. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="terms.html">Terms of Service</a> · 
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
